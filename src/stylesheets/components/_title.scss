@@ -1,0 +1,93 @@
+.title-container {
+  position: fixed;
+  z-index: 3;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 30px 10px;
+  margin-left: 80px;
+  width: -webkit-fill-available;
+
+  background: #ffffff;
+  border-bottom: 1px solid $gray150;
+
+  .title-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .img-icon {
+    margin-right: 10px;
+  }
+
+  .invoice-select-wrapper {
+    position: absolute;
+    top: 10px;
+    right: 35px;
+
+    display: flex;
+    align-items: center;
+
+    .saved-filter-text {
+      margin: 0 10px 0 0;
+    }
+
+    .ui.selection.dropdown {
+      position: relative;
+
+      width: 120px;
+
+      border: none;
+
+      i {
+        display: none;
+      }
+
+      .text {
+        font-size: 16px;
+        color: #399fd0;
+      }
+
+      &:after {
+        content: url(../assets/images/chevron-down.png);
+
+        position: absolute;
+        top: 7px;
+        right: 13px;
+      }
+    }
+  }
+
+  .welcome-name {
+    display: flex;
+    padding-left: 28px;
+
+    .title-one {
+      margin-right: 5px;
+    }
+
+    div {
+      padding: 24px 0 0;
+
+      font-size: 26px;
+    }
+  }
+}
+
+.title-one, .title-two {
+  font-family: $gibson;
+  font-size: 20px;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1440px) {
+  .title-container {
+    margin-left: 47px;
+
+    .welcome-name .title-one {
+      div {
+        font-size: 24px;
+      }
+    }
+  }
+}

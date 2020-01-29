@@ -1,0 +1,911 @@
+.lead-container {
+  .holder-content {
+    position: relative;
+
+    padding: 53px 52px 50px 108px;
+    min-height: 100vh;
+
+    background-color: $gray100;
+
+    &:before {
+      content: "";
+
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 2;
+
+      width: 100vw;
+      height: 100vh;
+
+      background-color: rgba(0, 0, 0, .4);
+
+      opacity: 0;
+      pointer-events: none;
+      transition: all .3s ease-in-out;
+    }
+
+    &.mark-open {
+      &:before {
+        opacity: 1;
+        pointer-events: initial;
+      }
+    }
+  }
+
+  .chart-filter {
+    .holder-btn-export {
+      position: relative;
+    }
+
+    .holder-export-options {
+      position: absolute;
+      top: 45px;
+      right: 0;
+      left: 0;
+      z-index: 1;
+
+      display: flex;
+      flex-direction: column;
+      height: 0;
+
+      color: $white;
+
+      background-color: $green;
+
+      opacity: 0;
+      pointer-events: none;
+      transition: all .2s ease-in-out;
+
+      &.show {
+        height: initial;
+
+        opacity: 1;
+        pointer-events: initial;
+      }
+
+      span {
+        padding: 5px 25px;
+
+        @include on-event {
+          background-color: $btn-green-hover;
+        }
+      }
+    }
+
+    .filter {
+      display: flex;
+      width: 32.4%;
+
+      background-color: $gray100;
+
+      span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 12px 0;
+        width: 33.33%;
+
+        font-size: 16px;
+        font-weight: 600;
+        color: $white;
+        text-transform: uppercase;
+
+        background-color: $gray300;
+
+        cursor: pointer;
+        transition: all .2s ease-in-out;
+
+        &:hover {
+          background-color: $gray150;
+
+          cursor: pointer;
+          transition: all .2s ease-in-out;
+        }
+
+        &.active {
+          color: $black;
+
+          background-color: $gray150;
+        }
+      }
+    }
+  }
+
+  .holder-chart {
+    margin-bottom: 95px;
+
+    box-shadow: 1px 1px 19px 0 rgba(0, 0, 0, .2);
+
+    .chart-box {
+      padding: 38px;
+      height: 300px;
+
+      background-color: $white;
+    }
+
+    .chart-filter {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 44px;
+      margin-top: 29px;
+
+      text-transform: uppercase;
+    }
+
+    .chart-title {
+      margin: 0;
+
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .chartjs-render-monitor {
+      width: -webkit-fill-avamarkilable !important;
+      height: 100% !important;
+    }
+  }
+
+  .holder-table {
+    .holder-filter {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      padding-left: 9px;
+
+      > * {
+        margin-right: 15px;
+        margin-bottom: 16px;
+      }
+    }
+
+    .filter-title {
+      margin-right: 15px;
+      width: 73px;
+
+      font-size: 20px;
+    }
+
+    .holder-type {
+      width: 163px;
+    }
+
+    .holder-date-range {
+      width: 150px;
+    }
+
+    .holder-date {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      margin: 0;
+      height: 0;
+
+      background-color: $white;
+
+      opacity: 0;
+      pointer-events: none;
+      transition: all .2s ease-in-out;
+
+      &.show {
+        padding: 10px 22px;
+        margin-right: 15px;
+        margin-bottom: 16px;
+        height: 100%;
+
+        opacity: 1;
+        pointer-events: initial;
+      }
+
+      .title {
+        margin-right: 27px;
+
+        font-size: 20px;
+      }
+
+      .dash {
+        margin: 0 11px;
+      }
+
+      .holder-datepicker {
+        width: 73px;
+
+        input {
+          width: 100%;
+
+          font-size: 16px;
+          color: $link-color;
+
+          border: 0;
+
+          cursor: pointer;
+        }
+      }
+    }
+
+    .holder-status {
+      width: 194px;
+    }
+
+    .holder-score {
+      width: 100px;
+    }
+
+    .holder-agent {
+      width: 120px;
+    }
+
+    .holder-id {
+      padding: 12px 19px 12px 29px;
+      width: 257px;
+
+      background-color: $white;
+
+      .title {
+        position: relative;
+
+        padding-right: 43px;
+        margin-right: 8px;
+
+        font-size: 19px;
+        color: $gray300;
+
+        &:before {
+          content: "#";
+
+          position: absolute;
+          top: 50%;
+          right: 0;
+
+          color: $link-color;
+
+          transform: translateY(-50%);
+        }
+      }
+
+      input {
+        width: 105px;
+
+        border: 0;
+      }
+    }
+
+    .holder-more {
+      margin-right: 24px;
+      width: 177px;
+
+      button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 11px 18px;
+        width: 100%;
+
+        color: $link-color;
+
+        background-color: white;
+        border: 0;
+
+        img:nth-child(3) {
+          display: none;
+        }
+
+        &:hover {
+          color: $white;
+
+          background: $link-color;
+
+          cursor: pointer;
+          transition: all .2s ease-in-out;
+
+          img:nth-child(2) {
+            display: none;
+          }
+
+          img:nth-child(3) {
+            display: block;
+          }
+        }
+      }
+
+      span {
+        margin-right: 12px;
+
+        font-size: 19px;
+      }
+    }
+
+    .holder-search {
+      padding: 0 28px;
+      width: 475px;
+
+      background-color: $white;
+
+      input {
+        padding: 15px 62px;
+
+        font-size: 16px;
+
+        background-image: url(../assets/images/search-icon.svg);
+        background-position: left center;
+        background-repeat: no-repeat;
+        background-size: 25px;
+        border: 0;
+
+        &::placeholder {
+          font-size: 16px;
+          color: $gray300;
+        }
+      }
+    }
+
+    .ui.selection.dropdown {
+      padding: 17px 15px;
+      width: 100%;
+
+      background: url(../assets/images/arrow-down-dark.png) no-repeat 86% 50%;
+      background-color: $white;
+      background-size: 18px;
+      border: transparent;
+      box-shadow: none;
+
+      .menu {
+        border: none;
+        box-shadow: none;
+      }
+
+      .text {
+        font-size: 16px;
+        color: $gray300;
+
+        cursor: pointer;
+      }
+
+      span.text {
+        padding: 10px 15px;
+
+        @include on-event {
+          background-color: $hover-row;
+        }
+      }
+
+      i {
+        display: none;
+      }
+    }
+
+    .table {
+      background-color: $white;
+
+      .heading {
+        display: flex;
+        justify-content: space-between;
+
+        .btn-export {
+          padding: 10px 26px;
+        }
+
+        button {
+          position: relative;
+
+          display: flex;
+          align-items: center;
+          padding: 0 26px;
+          width: 167px;
+
+          font-size: 14px;
+          font-weight: 600;
+          color: $white;
+          text-transform: uppercase;
+
+          background-color: $green;
+          border: 1px solid $green;
+
+          &:hover {
+            color: $white;
+
+            background: $btn-green-hover;
+
+            cursor: pointer;
+            transition: all .2s ease-in-out;
+          }
+
+          img {
+            margin-right: 12px;
+          }
+
+          &:before {
+            content: "\f078";
+
+            position: absolute;
+            top: 50%;
+            right: 24px;
+
+            font-family: "Font Awesome 5 Free";
+            font-weight: 600;
+
+            transform: translateY(-50%);
+          }
+        }
+      }
+
+      .table-content {
+        .tag-holder {
+          pointer-events: none;
+
+          &:not(:last-of-type) {
+            margin-bottom: 10px;
+          }
+        }
+
+        .webpage {
+          color: $pink;
+        }
+
+        .facebook {
+          color: $link-color;
+        }
+
+        .online {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          color: $white;
+
+          background-color: $green;
+          border-radius: 10px;
+        }
+
+        .offline, .meeting {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          color: $white;
+
+          background-color: $orange;
+          border-radius: 10px;
+        }
+
+        .existing {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          color: $white;
+
+          background-color: $gray300;
+          border-radius: 10px;
+        }
+
+        .opportunity {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          color: $white;
+
+          background-color: $purple;
+          border-radius: 10px;
+        }
+
+        .holder-dropdown {
+          position: absolute;
+          top: 0;
+          right: 0;
+          left: 0;
+          z-index: 2;
+
+          display: flex;
+          flex-direction: column;
+
+          background-color: $white;
+
+          opacity: 0;
+          pointer-events: none;
+          transition: all .2s ease-in-out;
+
+          &-active {
+            opacity: 1;
+            pointer-events: initial;
+          }
+
+          span {
+            padding: 5px 10px;
+
+            @include on-event {
+              background-color: $hover-row;
+            }
+          }
+        }
+
+        .ui.table {
+          margin-top: 0;
+
+          border: 0;
+
+          thead {
+            background-color: $gray150;
+
+            th {
+              padding: 12px .78571429em;
+
+              font-size: 16px;
+              font-weight: 400;
+
+              border: 0;
+            }
+          }
+
+          tbody {
+            tr {
+              &:hover {
+                background: $hover-row;
+
+                cursor: pointer;
+                transition: all .2s ease-in-out;
+              }
+
+              td {
+                position: relative;
+
+                font-size: 16px;
+
+                &:nth-child(2) {
+                  font-weight: 600;
+                  color: $link-color;
+                }
+              }
+
+              &:last-of-type {
+                .holder-dropdown {
+                  top: initial;
+                  bottom: 0;
+                }
+              }
+            }
+          }
+
+          .holder-star {
+            display: flex;
+
+            .image {
+              margin-right: 1px;
+            }
+          }
+
+          .holder-actions {
+            display: flex;
+
+            a {
+              &:not(:last-of-type) {
+                margin-right: 16px;
+              }
+            }
+          }
+        }
+
+        .ui.checkbox label:before {
+          top: 6px;
+          left: 15px;
+
+          width: 12px;
+          height: 12px;
+
+          border-color: $gray150;
+        }
+
+        .ui.checkbox label:after {
+          top: 4px;
+          left: 15px;
+
+          font-size: 9px;
+        }
+
+        .mark-all {
+          position: relative;
+
+          display: flex;
+        }
+
+        .mark {
+          position: absolute;
+          top: -8px;
+          left: 35px;
+          z-index: 2;
+
+          display: flex;
+          flex-direction: column;
+          padding: 10px 0;
+
+          background-color: $white;
+
+          opacity: 0;
+          pointer-events: none;
+          transition: all .3s ease-in-out;
+
+          &.active {
+            opacity: 1;
+            pointer-events: initial;
+          }
+
+          span {
+            padding: 5px 25px;
+
+            cursor: pointer;
+
+            @include on-event {
+              background-color: $gray150;
+            }
+          }
+        }
+
+        .btn-mark {
+          display: flex;
+          padding: 0;
+          width: 100%;
+
+          background-color: transparent;
+          border: 0;
+
+          i {
+            margin-top: 3px;
+
+            font-size: 11px;
+            color: $gray300;
+          }
+        }
+      }
+
+      .holder-pagination {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 33px;
+
+        .pagination {
+          display: flex;
+          flex-wrap: wrap;
+          padding: 0 26px;
+
+          font-size: 20px;
+        }
+
+        .page-number {
+          position: relative;
+
+          padding-right: 15px;
+        }
+
+        .page {
+          margin: 0 5px;
+
+          color: $link-color;
+        }
+
+        .increment, .decrement {
+          position: absolute;
+          right: 0;
+
+          padding: 0;
+          width: 15px;
+          height: 50%;
+
+          background-color: transparent;
+          border: 0;
+
+          i {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+
+            font-size: 12px;
+            color: $gray300;
+
+            transform: translate(-50%, -50%);
+          }
+        }
+
+        .increment {
+          top: 0;
+        }
+
+        .decrement {
+          bottom: 0;
+        }
+
+        p {
+          margin-left: 29px;
+        }
+      }
+
+      .holder-edit-fields {
+        padding: 5px 0;
+        margin-right: 49px;
+
+        font-size: 19px;
+
+        border: 0;
+
+        button {
+          color: $link-color;
+
+          background: transparent;
+          border: 0;
+
+          &:hover {
+            color: $black;
+
+            cursor: pointer;
+            transition: all .2s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+}
+
+.ui.large.modal.edit-field-modal {
+  width: 645px;
+
+  .header {
+    padding: 34px 28px 20px;
+
+    font-size: 15px;
+    line-height: 26px;
+  }
+
+  .content {
+    padding: 1.5rem 40px 35px;
+  }
+
+  .node-checkbox {
+    margin-bottom: 83px;
+  }
+
+  .holder-checkbox {
+    margin-bottom: 16px;
+  }
+
+  .holder-btns {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .btn-blue {
+    padding: 16px 45px;
+  }
+
+  .btn-transparent {
+    padding: 16px 36px;
+    margin-left: 28px;
+  }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1200px) {
+  .ui.large.modal.edit-field-modal .content {
+    height: 500px;
+  }
+
+  .lead-table-holder {
+    overflow-y: scroll;
+  }
+
+  .lead-container {
+    .holder-content {
+      padding: 40px 20px 40px 70px;
+    }
+
+    .holder-chart {
+      margin-bottom: 45px;
+
+      .chart-title {
+        font-size: 14px;
+      }
+
+      .chart-box {
+        height: 230px;
+      }
+    }
+
+    .chart-filter {
+      .filter {
+        span {
+          font-size: 12px;
+        }
+      }
+    }
+
+    .holder-table {
+      .filter-title {
+        font-size: 16px;
+      }
+
+      .ui.selection.dropdown {
+        padding: 12px 15px;
+
+        .text {
+          font-size: 16px;
+        }
+      }
+
+      .holder-date {
+        &.show {
+          padding: 7px 22px;
+        }
+
+        .title {
+          font-size: 16px;
+        }
+
+        .holder-datepicker {
+          input {
+            font-size: 16px;
+          }
+        }
+      }
+
+      .holder-search {
+        width: 316px;
+
+        input {
+          padding: 9px 40px;
+          width: 100%;
+
+          font-size: 16px;
+
+          background-size: 20px;
+
+          &::placeholder {
+            font-size: 16px;
+          }
+        }
+      }
+
+      .table {
+        .holder-edit-fields {
+          margin-right: 15px;
+        }
+
+        .holder-pagination {
+          .pagination {
+            font-size: 16px;
+          }
+        }
+
+        .holder-edit-fields {
+          button {
+            font-size: 14px;
+          }
+        }
+
+        .table-content {
+          .ui.table {
+            thead {
+              th {
+                font-size: 14px;
+              }
+            }
+
+            tbody {
+              tr td {
+                font-size: 14px;
+              }
+            }
+          }
+
+          .online, .offline {
+            padding: 0 8px;
+          }
+
+          .existing, .meeting, .opportunity {
+            padding: 0 15px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,98 @@
+.teamsetting-wrapper {
+  padding-top: 40px;
+  width: 1018px;
+  max-width: 100%;
+
+  table.ui.single.line.table {
+    border: none;
+    box-shadow: 0 0 14px 4px #f5f5f5;
+  }
+
+  thead.top-table-header tr th {
+    padding-left: 30px;
+
+    font-weight: 500;
+
+    background: $gray100;
+  }
+
+  .ui.table tr {
+    td {
+      padding: 29px 20px 30px 30px;
+    }
+
+    &:hover {
+      background: $hover-row;
+    }
+  }
+
+  tr.table-content-row td:first-child {
+    font-weight: 600;
+    color: $link-color;
+  }
+
+  i.fa.fa-eye, i.fa.fa-edit {
+    font-size: 16px;
+    color: #575757;
+
+    cursor: pointer;
+  }
+
+  i.fa.fa-eye {
+    margin-right: 15px;
+  }
+
+  .header-modal-style {
+    font-family: $lato;
+  }
+
+  .ui.dimmer {
+    background-color: rgba(0, 0, 0, .2);
+  }
+}
+
+.create-button-holder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  width: 1018px;
+  max-width: 100%;
+
+  box-shadow: 5px 3px 25px 10px #f5f5f5;
+
+  .create-button-title {
+    padding-left: 30px;
+    margin: 0;
+
+    font-family: $gibson;
+    font-size: 20px;
+    font-weight: 600;
+    color: $link-color;
+  }
+
+  .ui.button.btn-style {
+    padding: 19px 52px;
+    margin: 0;
+
+    font-family: $gibson;
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1440px) {
+  .create-button-holder {
+    .ui.button.btn-style {
+      font-size: 16px;
+    }
+
+    .create-button-title {
+      font-size: 16px;
+    }
+  }
+
+  .ui.basic.modal > .header.modal-header {
+    font-size: 16px;
+  }
+}

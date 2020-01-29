@@ -1,0 +1,74 @@
+.innertab-wrapper {
+  display: flex;
+  padding: 0;
+}
+
+.tab-wrapper {
+  padding: 0 68px 30px 366px;
+  margin-top: 47px;
+  width: 100%;
+}
+
+.innertab-item {
+  position: relative;
+
+  margin-left: 5px;
+
+  cursor: pointer;
+
+  &:hover div:before {
+    width: 100%;
+  }
+
+  div {
+    display: flex;
+    justify-content: center;
+    padding: 12px 30px;
+
+    font-family: $gibson;
+    font-size: 20px;
+    font-weight: 300;
+
+    transition: all .3s ease-in-out;
+
+
+    &:before {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 0;
+      height: 6px;
+
+      background-color: $link-color;
+
+      transition: all .3s ease-in-out;
+    }
+  }
+
+  .active {
+    text-shadow: -.06ex 0 black, .06ex 0 black;
+
+    @include on-event {
+      color: $black;
+    }
+
+    // border-top: 6px solid $link-color;
+
+    &:before {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1440px) {
+  .tab-wrapper {
+    padding: 0 68px 30px 272px;
+  }
+
+  .innertab-item div {
+    font-size: 16px;
+  }
+}

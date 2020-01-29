@@ -1,0 +1,41 @@
+.single-table {
+  width: 935px;
+  max-width: 100%;
+
+  .ui.table {
+    border: none;
+
+    th {
+      font-family: $gibson;
+      font-size: 20px;
+      font-weight: 500;
+      color: $light-black;
+    }
+
+    .top-table-header {
+      tr {
+        th {
+          background: transparent;
+        }
+      }
+    }
+
+    .table-content-row td {
+      border: 1px solid #f4f4f4;
+    }
+
+    .bottom-table-header {
+      tr {
+        th {
+          background: $gray100;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1440px) {
+  .single-table .ui.table th {
+    font-size: 16px;
+  }
+}

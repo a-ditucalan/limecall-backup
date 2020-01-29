@@ -1,0 +1,153 @@
+.customize {
+  background-color: $white;
+
+  .align-box {
+    padding: 36px 32px 42px;
+
+    border-bottom: 1px solid $gray100;
+  }
+
+  .company-wrapper {
+    input[type="text"] {
+      width: 496px;
+      max-width: 100%;
+      height: 54px;
+
+      font-family: $gibson;
+      font-weight: 400;
+    }
+  }
+
+  .language-wrapper.align-box {
+    padding: 24px 32px 102px;
+    padding: 24px 32px 75px;
+
+    .selection {
+      padding: 20px 31px;
+      width: 497px;
+      max-width: 100%;
+
+      font-family: $gibson;
+      font-size: 17px;
+      font-weight: 500;
+    }
+
+    .ui.selection.dropdown > .dropdown.icon {
+      top: 50%;
+      right: 0;
+
+      padding: 0 15px;
+      margin: 0;
+
+      transform: translateY(-50%);
+    }
+  }
+
+  .welcome-wrapper {
+    .welcome-textarea {
+      padding: 17px 27px 0;
+      width: 497px;
+
+      font-family: $gibson;
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+
+  &-title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 20px 14px;
+
+    border-bottom: 1px solid $gray100;
+
+    .customize-title {
+      margin-bottom: 0;
+
+      font-family: $gibson;
+      font-size: 19px;
+      font-weight: 400;
+    }
+  }
+
+  .title {
+    font-family: $gibson;
+    font-size: 20px;
+    font-weight: 300;
+  }
+
+  .colorpicker {
+    &-wrapper {
+      display: flex;
+      align-items: center;
+
+      .or-text {
+        margin-right: 23px;
+        margin-bottom: 0;
+        margin-left: 10px;
+
+        font-family: $gibson;
+        font-size: 20px;
+        font-weight: 300;
+      }
+    }
+
+    &-holder {
+      position: relative;
+
+      padding: 4px 18px;
+      width: 191px;
+      max-width: 100%;
+
+      border: 1px solid $gray100;
+
+      .rc-color-picker-wrap {
+        position: absolute;
+        left: 0;
+
+        opacity: 0;
+      }
+    }
+  }
+
+  .colorpicker-item-holder {
+    display: flex;
+
+    .colorpicker-item {
+      margin-right: 13px;
+      width: 30px;
+      height: 30px;
+    }
+
+    .pink {
+      background-color: #f40b74;
+    }
+
+    .yellow {
+      background-color: #fdd800;
+    }
+
+    .brown {
+      background-color: #f89902;
+    }
+
+    .green {
+      background-color: #7ed321;
+    }
+
+    .blue {
+      background-color: #2795ff;
+    }
+
+    .violet {
+      background-color: #a201fe;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1440px) {
+  .customize .colorpicker-holder .rc-color-picker-wrap {
+    top: -29px;
+    left: -94px;
+  }
+}

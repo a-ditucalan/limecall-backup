@@ -1,0 +1,144 @@
+.billing-info-wrapper {
+  margin-top: 72px;
+  width: 1315px;
+  max-width: 100%;
+
+  .billing-title-holder {
+    padding: 20px 40px;
+
+    background-color: $gray100;
+  }
+
+  .billinginfo-content {
+    padding: 34px 42px;
+
+    border: 1px solid $gray100;
+
+    .btn-billing {
+      padding: 7px 30px;
+      margin-top: 93px;
+
+      font-size: 20px;
+    }
+  }
+
+  .billinginfo-input-holder {
+    display: flex;
+    justify-content: space-between;
+
+    .input-invi-wrapper {
+      flex-basis: 45%;
+    }
+
+    .input-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 10px 0;
+    }
+
+    .input-invi-wrapper:nth-child(2) {
+      flex-basis: 49%;
+    }
+
+    input {
+      width: 400px;
+      height: 35px;
+
+      background: $gray100;
+      border: none;
+
+      &:focus {
+        background: $gray100;
+      }
+    }
+  }
+
+  .billinginfo-input-holder-last {
+    display: flex;
+
+    .input-invi-wrapper {
+      flex-basis: 33.33%;
+    }
+
+    .input-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 10px 0;
+
+      &:not(:first-child) {
+        justify-content: flex-end;
+
+        label {
+          margin-right: 25px;
+        }
+      }
+
+      &:nth-child(3) {
+        .input {
+          input {
+            width: 300px;
+          }
+        }
+      }
+    }
+
+    input {
+      width: 255px;
+      height: 35px;
+
+      background: $gray100;
+      border: none;
+
+      &:focus {
+        background: $gray100;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1550px) {
+  .billing-info-wrapper {
+    .billinginfo-input-holder input {
+      width: 176px;
+    }
+
+    .billinginfo-content .btn-billing {
+      font-size: 16px;
+    }
+
+    .billinginfo-input-holder-last {
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      input {
+        width: 176px;
+      }
+
+      .input-invi-wrapper {
+        flex-basis: 45%;
+      }
+
+      .input-invi-wrapper:nth-child(2) {
+        justify-content: space-between;
+        flex-basis: 49%;
+      }
+
+      .input-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px 0;
+      }
+
+      .input-wrapper:nth-child(3) {
+        justify-content: space-between;
+
+        .input input {
+          width: 176px;
+        }
+      }
+    }
+  }
+}

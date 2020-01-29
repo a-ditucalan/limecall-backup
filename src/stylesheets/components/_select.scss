@@ -1,0 +1,33 @@
+.ui.selection.dropdown {
+  padding: 9px 25px;
+  min-width: initial;
+  max-width: 100%;
+  min-height: initial;
+
+  font-size: 14px;
+
+  border-radius: 0;
+
+  &.background-gray {
+    background: $gray100;
+    border-color: $gray100;
+  }
+}
+
+.ui.default.dropdown:not(.button) > .text, .ui.dropdown:not(.button) > .default.text {
+  color: $black;
+}
+
+.ui.dropdown .menu .active.item {
+  font-weight: initial;
+}
+
+.ui.selection.dropdown .menu > .item {
+  padding: 0 !important;
+}
+
+.ui.selection.dropdown .menu > .item .text {
+  display: flex;
+  padding: 9px 25px;
+}
+

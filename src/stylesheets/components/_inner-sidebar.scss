@@ -1,0 +1,54 @@
+.innersidebar-container {
+  position: fixed;
+
+  padding: 37px 0;
+  margin-top: 47px;
+  margin-left: 73px;
+  width: 225px;
+  height: 100%;
+
+  background-color: rgb(244, 244, 244);
+
+  .innersidebar-subitem {
+    padding: 13px 35px;
+
+    cursor: pointer;
+
+    &:hover {
+      background: $hover-row;
+
+      cursor: pointer;
+      transition: all .2s ease-in-out;
+    }
+
+    span {
+      font-family: $gibson;
+      font-size: 20px;
+
+      transition: all .3s ease-in-out;
+    }
+
+    .active {
+      font-weight: 600;
+
+      @include on-event {
+        color: $black;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1440px) {
+  .innersidebar-container {
+    margin-left: 47px;
+    width: 180px;
+
+    .innersidebar-subitem {
+      padding: 13px 30px;
+
+      span {
+        font-size: 16px;
+      }
+    }
+  }
+}

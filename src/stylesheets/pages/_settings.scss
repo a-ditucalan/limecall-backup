@@ -1,0 +1,1313 @@
+.account-settings {
+  .holder-account {
+    padding: 7px 0;
+
+    .company-information {
+      .holder-input {
+        display: flex;
+      }
+
+      .input-wrapper {
+        flex-direction: column;
+        margin-bottom: 50px;
+        width: 556px;
+        max-width: 100%;
+
+        &:not(:last-of-type) {
+          margin-right: 33px;
+        }
+
+        .input-title {
+          margin-bottom: 10px;
+        }
+
+        .input {
+          margin-right: 35px;
+          width: 100%;
+        }
+      }
+
+      .holder-upload-logo {
+        .holder-logo {
+          width: 44.3%;
+        }
+
+        .logo {
+          margin-top: 10px;
+          width: 100%;
+          height: 205px;
+        }
+
+        .holder-upload {
+          padding: 46px 15px 10px;
+          width: 55.7%;
+        }
+
+        .upload-title {
+          margin-bottom: 13px;
+        }
+
+        .upload-desc {
+          font-size: 16.2px;
+
+          &:not(:last-of-type) {
+            margin-bottom: 13px;
+          }
+
+          &:last-of-type {
+            margin-bottom: 26px;
+          }
+        }
+
+        .btn-transparent {
+          margin-right: 10px;
+        }
+      }
+    }
+
+    .account-information {
+      .holder {
+        display: flex;
+      }
+
+      .input-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 233px;
+        max-width: 100%;
+
+        &:first-of-type {
+          margin-right: 4px;
+        }
+
+        &:nth-of-type(2) {
+          margin-right: 30px;
+        }
+
+        &:last-of-type {
+          width: 465px;
+          max-width: 100%;
+        }
+      }
+
+      .ui.input > input {
+        padding: 5px 10px;
+        width: 100%;
+      }
+
+      .input-title {
+        margin-bottom: 9px;
+
+        font-size: 12px;
+      }
+    }
+
+    .change-password {
+      padding: 14px 32px 30px;
+
+      .title {
+        &.active {
+          margin-bottom: 19px;
+        }
+      }
+
+      .holder-change-password {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 9px;
+        width: 660px;
+        max-width: 100%;
+      }
+
+      .input-wrapper {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 29px;
+        width: 285px;
+        max-width: 100%;
+
+        &:nth-of-type(odd) {
+          margin-right: 30px;
+        }
+      }
+
+      .ui.input > input {
+        padding: 5px 10px;
+        width: 100%;
+      }
+
+      .input-title {
+        margin-bottom: 9px;
+
+        font-size: 12px;
+      }
+
+      .ui.button {
+        padding: 7px 31px;
+
+        font-size: 20px;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .holder-notification {
+    padding: 49px 0;
+
+    .subtext {
+      margin-bottom: 36px;
+
+      font-size: 16px;
+    }
+
+    .holder-enable-notification {
+      position: relative;
+
+      padding: 28px 21px 7px;
+      margin-bottom: 40px;
+      width: 1020px;
+      max-width: 100%;
+
+      border: 1px solid $orange;
+    }
+
+    .notification-title {
+      display: flex;
+      align-items: center;
+      margin-bottom: 12px;
+
+      font-size: 16px;
+      color: $orange;
+
+      img {
+        margin-right: 13px;
+      }
+    }
+
+    .notification-desc {
+      width: 440px;
+      max-width: 100%;
+
+      font-size: 14.2px;
+      line-height: 26px;
+    }
+
+    .btn-green {
+      position: absolute;
+      right: 11px;
+      bottom: 19px;
+
+      padding: 14px 44px;
+
+      font-size: 18.9px;
+    }
+
+    .checkbox-formobile {
+      margin-bottom: 35px;
+
+      .holder-checkbox {
+        position: relative;
+      }
+
+      .ui.checkbox {
+        position: initial;
+      }
+
+      .ui.checkbox label {
+        position: initial;
+
+        font-size: 14px;
+      }
+
+      .ui.checkbox label:before {
+        top: 50%;
+
+        width: 19px;
+        height: 19px;
+
+        transform: translateY(-50%);
+      }
+
+      .ui.checkbox label:after {
+        top: 50%;
+
+        width: 19px;
+        height: 19px;
+
+        font-size: 14px;
+
+        transform: translateY(-50%);
+      }
+    }
+
+    .holder-select {
+      margin-bottom: 33px;
+    }
+
+    .ui.selection.dropdown {
+      &:first-of-type {
+        margin-right: 10px;
+        width: 347px;
+      }
+
+      &:nth-of-type(2) {
+        margin-right: 11px;
+        width: 148px;
+      }
+    }
+
+    .warning-text {
+      position: relative;
+
+      padding-left: 35px;
+
+      font-size: 15.3px;
+      color: $gray300;
+
+      &:before {
+        content: "i";
+
+        position: absolute;
+        top: 50%;
+        left: 0;
+
+        padding: 0 6px;
+
+        font-size: 11px;
+
+        border: 1px solid $gray150;
+
+        transform: translateY(-50%);
+      }
+    }
+
+    .schedule-call-notif {
+      margin-top: 62px;
+      margin-bottom: 58px;
+
+      .ui.checkbox label {
+        font-size: 14px;
+      }
+
+      .ui.checkbox label:before {
+        width: 19px;
+        height: 19px;
+      }
+
+      .ui.checkbox label:after {
+        top: 1px;
+
+        width: 19px;
+        height: 19px;
+
+        font-size: 14px;
+      }
+    }
+
+    .title-label {
+      margin-bottom: 23px;
+
+      font-size: 19.5px;
+    }
+
+    .input-wrapper {
+      display: flex;
+      flex-direction: column;
+      width: 350px;
+      max-width: 100%;
+    }
+
+    .input-title {
+      margin-bottom: 14px;
+
+      font-size: 14px;
+    }
+
+    .billing-notif {
+      margin-bottom: 45px;
+
+      .title-label {
+        margin-bottom: 17px;
+      }
+
+      .ui.input > input {
+        padding: 6px 20px;
+      }
+    }
+
+    .btn-blue {
+      padding: 6px 42px;
+      margin-bottom: 68px;
+
+      font-size: 20px;
+    }
+
+    .accordion {
+      .title {
+        margin-bottom: 0;
+
+        &.active {
+          .accordion-desc {
+            margin-bottom: 15px;
+          }
+        }
+
+        .accordion-title {
+          margin-bottom: 11px;
+        }
+
+        .accordion-desc {
+          margin-bottom: 0;
+        }
+      }
+
+      .accordion-holder {
+        padding: 20px 39px;
+        width: 1030px;
+      }
+    }
+
+    .desktop-notification {
+      margin-bottom: 56px;
+
+      .holder-checkbox {
+        &:first-of-type {
+          margin-bottom: 12px;
+        }
+
+        &:nth-of-type(2) {
+          margin-bottom: 18px;
+        }
+      }
+
+      .subtext {
+        margin-bottom: 11px;
+      }
+
+      .ui.selection.dropdown {
+        width: 226px;
+      }
+    }
+
+    .email-notification {
+      margin-bottom: 50px;
+
+      .holder-checkbox {
+        margin-bottom: 19px;
+      }
+
+      .ui.selection.dropdown {
+        margin-bottom: 5px;
+        width: 348px;
+      }
+
+      .subtext {
+        font-size: 16.9px;
+
+        a {
+          color: $link-color;
+        }
+      }
+    }
+
+    .holder-checkboxes {
+      display: flex;
+      flex-wrap: wrap;
+
+      .nodecheckbox-title {
+        margin-bottom: 22px;
+      }
+
+      .title-label {
+        margin-bottom: 28px;
+        width: 100%;
+      }
+
+      .holder-checkbox {
+        margin-bottom: 12px;
+      }
+
+      .node-checkbox {
+        &:first-of-type {
+          width: 37.43%;
+        }
+
+        &:nth-of-type(2) {
+          width: 37.43%;
+        }
+
+        &:last-of-type {
+          width: 24%;
+        }
+      }
+    }
+  }
+}
+
+.call-schedules {
+  padding: 54px 0;
+  width: 1120px;
+  max-width: 100%;
+
+  .item-title {
+    font-size: 18.5px;
+  }
+
+  .item-desc {
+    font-size: 16px;
+  }
+
+  .holder-items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 53px;
+
+    &:last-of-type {
+      margin-bottom: 76px;
+    }
+  }
+
+  .holder-text, .input-wrapper {
+    width: 50%;
+  }
+
+  .holder-text {
+    width: 50%;
+  }
+
+  .item-title {
+    margin-bottom: 19px;
+  }
+
+  .item-desc {
+    width: 380px;
+    max-width: 100%;
+  }
+
+  .input-wrapper {
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 18px;
+    padding-left: 33px;
+
+    .ui.input {
+      width: 100%;
+    }
+  }
+
+  .ui.button.btn-blue {
+    padding: 8px 29px;
+
+    font-size: 19px;
+  }
+}
+
+.countries-settings {
+  padding: 47px 0;
+  width: 1255px;
+  max-width: 100%;
+
+  .page-title {
+    margin-bottom: 29px;
+
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .holder-input {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 75px;
+
+    .item-title {
+      margin-bottom: 19px;
+
+      font-size: 18.6px;
+    }
+  }
+
+  .holder-text {
+    width: 44%;
+  }
+
+  .item-desc {
+    font-size: 16px;
+  }
+
+  .input-wrapper {
+    display: flex;
+    align-items: flex-end;
+    width: 56%;
+
+    .ui.input {
+      width: 490px;
+      max-width: 100%;
+    }
+  }
+
+  .holder-checkboxes {
+    margin-bottom: 115px;
+
+    .item-title {
+      margin-bottom: 16px;
+
+      font-size: 20px;
+    }
+
+    .item-desc {
+      margin-bottom: 13px;
+    }
+  }
+
+  .blue-text {
+    font-size: 20px;
+    color: $link-color;
+
+    cursor: pointer;
+
+    @include on-event {
+      text-decoration: underline;
+    }
+  }
+
+  .holder-checkboxes {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .holder-other-countries {
+    width: 44%;
+
+    .blue-text {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .checkboxes {
+    width: 56%;
+  }
+
+  .node-checkbox {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .holder-checkbox {
+    margin-bottom: 11px;
+    width: 33.33%;
+
+    .ui.checkbox label {
+      font-size: 20.3px;
+    }
+  }
+
+  .toggle-group {
+    padding: 0;
+    margin-bottom: 42px;
+
+    .toggle-wrapper {
+      width: 875px;
+      max-width: 100%;
+    }
+
+    .call-title {
+      margin-bottom: 30px;
+    }
+
+    .call-description {
+      padding: 0;
+    }
+  }
+
+  .ui.button.btn-blue {
+    padding: 6px 29px;
+
+    font-size: 20px;
+  }
+}
+
+.blacklist-settings {
+  padding: 44px 0;
+
+  .ui.table thead th {
+    background: #f4f4f4;
+  }
+
+  .page-title {
+    margin-bottom: 21px;
+  }
+
+  .subtext {
+    margin-bottom: 37px;
+
+    font-size: 16.1px;
+  }
+
+  .holder-input {
+    margin-bottom: 40px;
+    width: 850px;
+    max-width: 100%;
+
+    &:nth-of-type(2) {
+      display: flex;
+      align-items: flex-end;
+      margin-bottom: 69px;
+
+      .input-wrapper {
+        margin-right: 12px;
+        width: 79.3%;
+      }
+
+      .ui.button.btn-blue {
+        padding: 13px 57px;
+        margin-right: 0;
+
+        font-size: 19px;
+      }
+    }
+  }
+
+  .input-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .input-title {
+    margin-bottom: 7px;
+  }
+
+  .holder-table {
+    margin-bottom: 50px;
+  }
+
+  .table-title {
+    margin-bottom: 35px;
+
+    font-size: 19.5px;
+  }
+
+  .common-table-wrapper {
+    width: 943px;
+    max-width: 100%;
+
+    .default-text {
+      padding: 9px 29px;
+
+      font-size: 20px;
+      font-weight: 400;
+
+      &:nth-child(1) {
+        width: 40.33%;
+      }
+
+      &:nth-child(2) {
+        width: 40.2%;
+      }
+    }
+
+    .table-content-row {
+      td {
+        padding: 9px 29px;
+      }
+    }
+  }
+}
+
+.sms-settings-wrapper {
+  margin-bottom: 50px;
+  margin-left: 33px;
+
+  .sms-header-holder {
+    padding-top: 96px;
+    margin-bottom: 51px;
+
+    .sms-title-wrapper {
+      margin-bottom: 54px;
+    }
+
+    .sms-title {
+      margin-bottom: 31px;
+    }
+  }
+
+  .single-table {
+    margin-bottom: 51px;
+    max-width: 100%;
+
+    &:nth-child(3) {
+      margin-bottom: 74px;
+    }
+
+    table.ui.single.line.table {
+      min-height: 257px;
+
+      .bottom-table-header {
+        .default-text {
+          padding: 10px 18px;
+        }
+      }
+    }
+  }
+
+  .sms-subject-holder {
+    display: flex;
+    justify-content: space-between;
+    width: 462px;
+    max-width: 100%;
+
+    .sms-text {
+      margin-top: 11px;
+
+      color: $light-black;
+    }
+
+    .sms-info {
+      width: 350px;
+      max-width: 100%;
+
+      .text-length {
+        margin-top: 24px;
+      }
+
+      .input-wrapper {
+        display: flex;
+      }
+
+      .ui.input {
+        width: 351px;
+        max-width: 100%;
+      }
+
+      input {
+        width: 100%;
+
+        font-family: $gibson;
+        font-size: 19px;
+        font-weight: 400;
+        text-align: center;
+
+        background: #f4f4f4;
+        border: none;
+      }
+    }
+  }
+
+  .sms-button-wrapper {
+    .default-text {
+      margin-bottom: 29px;
+    }
+
+    .btn-group {
+      margin-bottom: 56px;
+
+      button {
+        &:first-of-type {
+          padding: 10px 27px;
+        }
+
+        &:nth-of-type(2) {
+          padding: 10px 21px;
+        }
+
+        &:nth-of-type(3) {
+          padding: 10px 40px;
+        }
+      }
+    }
+
+    .btn-sms {
+      margin-right: 7px;
+
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .btn-blue {
+      padding: 8px 30px;
+
+      font-size: 19px;
+    }
+  }
+}
+
+.billing-subscription {
+  padding: 48px 0;
+
+  .credits {
+    display: flex;
+    margin-bottom: 42px;
+    width: 1092px;
+    max-width: 100%;
+
+    border: 1px solid $gray100;
+  }
+
+  .available-credits, .auto-recharge {
+    width: 50%;
+  }
+
+  .title {
+    margin: 0;
+
+    font-size: 19.7px;
+  }
+
+  .available-credits {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 82px 4px 46px;
+
+    border-right: 1px solid $gray100;
+  }
+
+  .available-phone-credits {
+    width: 130px;
+    max-width: 100%;
+  }
+
+  .credit-value {
+    display: flex;
+    flex-direction: column;
+
+    font-size: 30px;
+    line-height: 32px;
+    color: $green;
+  }
+
+  .btn-add-credits {
+    display: flex;
+    justify-content: center;
+
+    font-size: 14px;
+    font-weight: 200;
+    color: $link-color;
+  }
+
+  .auto-recharge {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 45px;
+  }
+
+  .auto-recharge-text {
+    margin-left: 7px;
+
+    i {
+      padding-left: 10px;
+
+      font-size: 15px;
+    }
+  }
+
+  .ui.table {
+    margin-bottom: 45px;
+
+    border-color: $gray100;
+  }
+
+  .ui.table thead th {
+    background: $gray100;
+    border-bottom: 0;
+  }
+
+  .ui.table thead th {
+    padding: 14px 46px;
+
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .table-content-row {
+    td {
+      padding: 14px 46px;
+
+      font-size: 19.4px;
+    }
+  }
+
+  .holder-subscription {
+    margin-bottom: 66px;
+
+    tbody .table-content-row {
+      td:nth-child(5), td:nth-child(6) {
+        transition: all .3s ease-in-out;
+
+        @include on-event {
+          color: $link-color;
+        }
+      }
+    }
+
+    .common-table-wrapper {
+      width: 1295px;
+      max-width: 100%;
+    }
+
+    .ui.table thead tr:first-child {
+      > th:first-child {
+        width: 10.33%;
+      }
+
+      > th:nth-of-type(2) {
+        width: 13%;
+      }
+
+      > th:nth-of-type(3) {
+        width: 11.6%;
+      }
+
+      > th:nth-of-type(4) {
+        width: 19%;
+      }
+
+      > th:nth-of-type(5) {
+        width: 21.7%;
+      }
+    }
+
+    .table-content-row {
+      td {
+        &:first-of-type {
+          width: 10.33%;
+        }
+
+        &:nth-of-type(2) {
+          font-weight: 200;
+          color: $link-color;
+        }
+
+        &:nth-of-type(3) {
+          font-weight: 200;
+          color: $green;
+        }
+
+        &:nth-of-type(5) {
+          font-size: 20px;
+          color: $red;
+
+          cursor: pointer;
+        }
+
+        &:nth-of-type(6) {
+          font-size: 20px;
+          font-weight: 600;
+          color: $green;
+
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .holder-total-usage {
+    .table-title {
+      margin-bottom: 12px;
+
+      font-size: 19.8px;
+    }
+
+    .common-table-wrapper {
+      width: 880px;
+      max-width: 100%;
+    }
+
+    .ui.table thead tr:first-child {
+      > th:first-child {
+        width: 32.2%;
+      }
+
+      &:nth-child(2) {
+        width: 36.3%;
+      }
+    }
+
+    .ui.table tr td {
+      &:nth-of-type(3) {
+        font-weight: 600;
+        color: $orange;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1440px) {
+  .callsettings-wrapper .ui.button.btn-blue {
+    font-size: 16px;
+  }
+
+  .sms-settings-wrapper {
+    .sms-subject-holder .sms-info input::placeholder {
+      font-size: 17px;
+    }
+
+    .sms-button-wrapper .btn-blue {
+      font-size: 16px;
+    }
+  }
+
+  .teamsetting-wrapper tr.table-content-row td {
+    font-size: 16px;
+  }
+
+  .sms-settings-wrapper {
+    .sms-description {
+      font-size: 14px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+  .billing-subscription {
+    .ui.table {
+      thead th {
+        padding: 14px 22px;
+
+        font-size: 16px;
+      }
+    }
+
+    .holder-subscription {
+      .table-content-row td {
+        padding: 14px 22px;
+
+        font-size: 16px;
+
+        &:nth-of-type(5), &:nth-of-type(6) {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .countries-settings .checkboxes {
+    margin-top: 30px;
+    width: 76%;
+  }
+
+  .account-settings .holder-notification .notification-desc {
+    width: 382px;
+  }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1200px) {
+  .accordion {
+    .title {
+      .accordion-title {
+        font-size: 16px;
+      }
+
+      .accordion-desc {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .account-settings {
+    .holder-account {
+      .account-information {
+        .holder {
+          flex-wrap: wrap;
+          justify-content: space-between;
+        }
+
+        .input-wrapper {
+          width: 49%;
+
+          &:first-child, &:nth-child(2) {
+            margin: 0;
+            margin-bottom: 15px;
+          }
+        }
+
+        .input-invi-wrapper {
+          width: 100%;
+
+          .input-wrapper {
+            width: 100%;
+          }
+        }
+      }
+
+      .change-password {
+        .ui.button {
+          font-size: 16px;
+        }
+      }
+    }
+
+    .holder-notification {
+      .subtext {
+        font-size: 14px;
+      }
+
+      .notification-title {
+        font-size: 14px;
+      }
+
+      .notification-desc {
+        font-size: 14px;
+      }
+
+      .btn-green {
+        font-size: 16px;
+      }
+
+      .checkbox-formobile {
+        .ui.checkbox {
+          label {
+            font-size: 12px;
+          }
+        }
+      }
+
+      .warning-text {
+        font-size: 12px;
+      }
+
+      .title-label {
+        font-size: 16px;
+      }
+
+      .btn-blue {
+        font-size: 16px;
+      }
+
+      .email-notification {
+        .subtext {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .call-schedules {
+    .item-title {
+      font-size: 16px;
+    }
+
+    .item-desc {
+      font-size: 14px;
+    }
+
+    input {
+      font-size: 16px;
+    }
+
+    .ui.button.btn-blue {
+      font-size: 16px;
+    }
+  }
+
+  .countries-settings {
+    .page-title {
+      font-size: 16px;
+    }
+
+    .holder-input {
+      .item-title {
+        font-size: 16px;
+      }
+    }
+
+    .item-desc {
+      font-size: 14px;
+    }
+
+    input {
+      font-size: 16px;
+    }
+
+    .holder-checkboxes {
+      .item-title {
+        font-size: 16px;
+      }
+    }
+
+    .blue-text {
+      font-size: 16px;
+    }
+
+    .holder-checkbox {
+      .ui.checkbox label {
+        font-size: 16px;
+      }
+    }
+
+    .call-title {
+      font-size: 16px;
+    }
+
+    .call-description {
+      font-size: 14px;
+    }
+
+    .ui.button.btn-blue {
+      font-size: 16px;
+    }
+  }
+
+  .blacklist-settings {
+    .subtext {
+      font-size: 14px;
+    }
+
+    input {
+      font-size: 16px;
+    }
+
+    .holder-input {
+      &:nth-of-type(2) {
+        .ui.button.btn-blue {
+          padding: 12px 57px;
+
+          font-size: 16px;
+        }
+      }
+    }
+
+    .table-title {
+      font-size: 16px;
+    }
+
+    .common-table-wrapper {
+      .default-text {
+        font-size: 16px;
+      }
+
+      .table-content-row td {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .billing-subscription {
+    .available-credits {
+      padding: 15px 30px;
+    }
+
+    .title {
+      display: flex;
+      align-items: center;
+
+      font-size: 16px;
+    }
+
+    .credit-value {
+      font-size: 26px;
+    }
+
+    .btn-add-credits {
+      font-size: 12px;
+    }
+
+    .auto-recharge-text {
+      i {
+        position: relative;
+        top: -4px;
+      }
+    }
+  }
+}

@@ -1,0 +1,71 @@
+.install {
+  background-color: $white;
+
+  .install-title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 20px 14px;
+
+    border-bottom: 1px solid $gray100;
+
+    .install-title {
+      margin-bottom: 0;
+
+      font-family: $gibson;
+      font-size: 19px;
+      font-weight: 400;
+    }
+
+    .install-sub-title {
+      font-family: $gibson;
+      font-size: 19px;
+      font-weight: 300;
+
+      a {
+        color: $link-color;
+      }
+    }
+  }
+
+  .collapse {
+    margin: 0;
+    width: 100%;
+
+    .collapse-header {
+      // margin-bottom: 11px;
+      margin: 0;
+
+      i {
+        margin-right: 16px;
+      }
+    }
+
+    .collapse-panel {
+      // padding: 5px 19px 27px;
+      // margin-top: 39px;
+      padding: 30px 20px;
+      margin: 0;
+
+      &:nth-child(3) {
+        border-bottom: none;
+      }
+    }
+
+    .collapse-panel.collapse-expanded > .collapse-body {
+      margin-left: 37px;
+    }
+  }
+
+  .ui.button.btn-green {
+    margin-top: 20px;
+  }
+
+  .suggestion-logo-wrapper {
+    width: 500px;
+    max-width: 100%;
+  }
+
+  .quicksetup-footer {
+    border-top: 1px solid #eee7e7;
+  }
+}

@@ -1,0 +1,114 @@
+.call-routing {
+  background-color: $white;
+
+  .call-title-holder {
+    padding: 14px 20px 14px;
+
+    border: 1px solid $gray100;
+
+    .title-text {
+      margin-bottom: 0;
+
+      font-family: $gibson;
+      font-size: 20px;
+      font-weight: 600;
+    }
+  }
+
+  .call-routing-content {
+    padding: 52px 20px;
+
+    border-bottom: 1px solid $gray100;
+
+    .call-routing-text {
+      margin-bottom: 9px;
+
+      font-family: $gibson;
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .call-routing-description {
+      margin-bottom: 10px;
+
+      font-family: $gibson;
+      font-size: 20px;
+      font-weight: 400;
+    }
+  }
+
+  .phone-number-holder {
+    display: flex;
+
+    .react-tel-input {
+      margin-right: 18px;
+      width: auto;
+
+      input {
+        height: 48px;
+      }
+    }
+
+    .ui.button.btn-blue {
+      padding: 8px 27px;
+
+      font-family: $gibson;
+      font-size: 15px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+
+      border-radius: 5px;
+    }
+  }
+
+  .code-holder {
+    display: flex;
+    margin-top: 20px;
+
+    button {
+      padding: 0;
+      margin: 0;
+
+      font-size: 16px;
+      font-weight: 400;
+      color: $link-color;
+
+      background: transparent;
+
+      transition: all .2s ease-in-out;
+
+      @include on-event {
+        background: transparent;
+      }
+
+      &:first-of-type {
+        position: relative;
+
+        margin-right: 15px;
+
+        &:before {
+          content: "";
+
+          position: absolute;
+          top: -3px;
+          right: calc(-15px);
+
+          width: 1px;
+          height: 25px;
+
+          background-color: $gray300;
+        }
+      }
+
+      &:last-of-type {
+        margin-left: 15px;
+
+        color: $gray150;
+
+        @include on-event {
+          color: $link-color;
+        }
+      }
+    }
+  }
+}

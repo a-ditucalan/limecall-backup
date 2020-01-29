@@ -1,0 +1,100 @@
+.callsettings-wrapper {
+  padding: 50px 0 0;
+  width: 1065px;
+  max-width: 100%;
+
+  .ui.button.btn-blue {
+    padding: 8px 32px;
+
+    font-size: 19px;
+  }
+}
+
+.toggle-group {
+  margin-bottom: 53px;
+  width: 100%;
+
+  &:last-of-type {
+    margin-bottom: 32px;
+  }
+
+  .toggle-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 995px;
+    max-width: 100%;
+  }
+
+  .toggle-holder {
+    display: flex;
+    align-items: center;
+  }
+
+  .toggle-content {
+    padding: 0 150px 0 0;
+  }
+}
+
+.call-title {
+  margin-bottom: 18px;
+
+  font-family: $gibson;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.call-description {
+  width: 545px;
+  max-width: 100%;
+
+  font-family: $gibson;
+  font-size: 16px;
+  font-weight: 400;
+  color: #b3b3b3;
+}
+
+.call-bottom-wrapper {
+  display: flex;
+  margin-bottom: 83px;
+  width: 1000px;
+  max-width: 100%;
+
+  .call-bottom-holder {
+    flex-basis: 28%;
+  }
+
+  .call-textarea-description {
+    width: 200px;
+    max-width: 100%;
+
+    font-family: $gibson;
+    font-size: 16px;
+    line-height: 19px;
+    color: #b3b3b3;
+  }
+
+  .call-textarea-holder {
+    padding-left: 51px;
+    width: 100%;
+
+    .call-textarea {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1440px) {
+  .call-title {
+    font-size: 16px;
+  }
+
+  .call-description {
+    font-size: 14px;
+  }
+
+  .call-bottom-wrapper {
+    .call-textarea-description {
+      font-size: 14px;
+    }
+  }
+}
