@@ -25,7 +25,7 @@
     "reaptcha": "^1.5.1",
     "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^0.87.1",
-    "swiper": "^4.5.0"
+    "swiper": "^6.5.1"
   },
   "scripts": {
     "start": "react-scripts start",
